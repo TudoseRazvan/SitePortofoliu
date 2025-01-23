@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/project-details.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tudose Razvan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="index-ro.html" class="flag-link">
+                            <img src="Imagini/RoFlag.svg" alt="UK Flag" class="flag-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Meniul de navigare slide -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="brand" onclick="closeNav()">Tudose Razvan</div>
+        <a href="#hero" onclick="navigateToSection(event)">About</a>
+        <a href="#projects" onclick="navigateToSection(event)">Projects</a>
+        <a href="#skills" onclick="navigateToSection(event)">Skills</a>
+        <a href="#reviews" onclick="navigateToSection(event)">Reviews</a>
+        <a href="#contact" onclick="navigateToSection(event)">Contact</a>
+    </div>
+
+    <!-- Sectiunea Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello! I am <span class="highlight">Razvan</span></h1> 
+                <p>I create solutions that combine theory with practice to address real market challenges.</p>
+                <a href="#projects" class="btn-primary-gradient">See My Projects</a>
+                <a href="#contact" class="btn-outline-light">Contact Me</a>
+            </div>
+            
+            <div class="translate-section">
+                <span class="translate-text">Translate to</span>
+                <a href="index-ro.html" class="flag-link-hero">
+                    <img src="Imagini/RoFlag.svg" alt="RO Flag" class="flag-icon-hero">
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="interactive-card">
+                        <h2>Web Development</h2>
+                        <p>I build websites and applications that are both functional and aesthetic. Innovation is the key to digital success.</p>
+                    </div>
+                    <div class="interactive-card">
+                        <h2>UX/UI Design</h2>
+                        <p>I create intuitive designs that put the user first to deliver an unforgettable experience.</p>
+                    </div>
+                    <div class="interactive-card">
+                        <h2>Software Development</h2>
+                        <p>I create customized software solutions that help businesses optimize processes and improve operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tranzitia Hero -->
+        <div class="hero-transition"></div>
+    </section>
+
+
+
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="text-center section-title">My Professional Experience</h2>
+            <div class="text-center mt-4">
+                <a href="Imagini/CV_Tudose_Razvan.pdf" download="CV_Tudose_Razvan.pdf" class="cv-download-btn">
+                    <span class="btn-icon">↓</span>
+                    <span class="btn-text">Download full CV (PDF)</span>
+                </a>
+            </div>
+            <div class="timeline">
+                <!-- Freelancer -->
+                <div class="timeline-item">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Software Engineer Intern</h3>
+                        <p><strong>Opti Systems SRL</strong></p>
+                        <p><em>July 2024 - December 2024</em></p>
+                        <p>Development and implementation of full-stack web applications, contributing to the creation of React interfaces and backend service integration, delivering efficient software solutions.</p>
+                    </div>
+                </div>
+    
+                <!-- Software Engineer Intern -->
+                <div class="timeline-item">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Software Engineer Intern</h3>
+                        <p><strong>FMS IT SRL</strong></p>
+                        <p><em>July 2023 - December 2023</em></p>
+                        <p>Development and testing of software applications to optimize internal processes.</p>
+                    </div>
+                </div>
+    
+                <!-- Intern Ministry of Economy -->
+                <div class="timeline-item">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Intern</h3>
+                        <p><strong>Ministry of Economy, Entrepreneurship, and Tourism</strong></p>
+                        <p><em>March 2023 - June 2023</em></p>
+                        <p>Responsible for interpreting and analyzing data related to entrepreneurship and tourism in Romania, generating insightful statistics and analytical reports to support strategic decision-making.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">My projects</h2>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button id="prev-project" class="btn btn-primary mr-2">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button id="next-project" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row project-card-container mt-4">
+                <!-- Project 1: Grile-Drept.com -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/GrileDreptProiect1.png" class="card-img-top" alt="Grile-Drept.com">
+                    </div>
+                </div>
+                <!-- Project 2: Opti Systems Website -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/OptiProiect2.1.png" class="card-img-top" alt="Opti Systems Website">
+                    </div>
+                </div>
+                <!-- Project 3: Weather App -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/WeatherAppProiect3.png" class="card-img-top" alt="Weather App">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini\WorkInProgressProject4.jpg" class="card-img-top" alt="Proiect 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="project-details-new" class="my-5">
+        <h2 class="text-center mb-5 project-section-title">Project Details</h2>
+        
+        <div class="project-item-container">
+             <!-- Project 1: Grile-Drept.com -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="Imagini/GrileDreptMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Grile-Drept.com Project">
+                </div>
+                <div class="col-12 col-md-6 text-left">
+                    <h3 class="project-title">Grile-Drept.com</h3>
+                    <p class="project-description">An online platform aimed at students preparing for admission exams to computer science faculties in Romania. It provides access to past exam questions, detailed admission process information, and a public leaderboard with user rankings.</p>
+                    <a href="https://admiteri-drept.vercel.app/" class="btn project-btn" target="_blank" rel="noopener noreferrer">Access the Application</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Opti Systems -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center order-1 order-md-2">
+                    <img src="Imagini/OptiMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Opti Systems Website">
+                </div>
+                <div class="col-12 col-md-6 text-left order-2 order-md-1">
+                    <h3 class="project-title">Opti Systems Website</h3>
+                    <p class="project-description">I contributed to the development of the official website of Opti Systems SRL, an IT services company. The project involved creating a modern, responsive platform that showcases company services, products, and solutions for clients.</p>
+                    <a href="https://www.opti.ro" class="btn project-btn" target="_blank" rel="noopener noreferrer">Access the Application</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Weather App -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="Imagini/WeatherAppMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Weather Application">
+                </div>
+                <div class="col-12 col-md-6 text-left">
+                    <h3 class="project-title">Weather Application</h3>
+                    <p class="project-description">This weather application uses the OpenWeather API to provide updated weather forecasts. Users can check the weather for their current location or for selected cities. Features include displaying the current temperature, hourly forecasts, and information about sunrise and sunset.</p>
+                    <a href="https://weather-app-one-psi-21.vercel.app/" class="btn project-btn" target="_blank" rel="noopener noreferrer">Access the Application</a>
+                </div>                
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center order-1 order-md-2">
+                    <img src="Imagini/WorkInProgressMonitor.jpg" class="img-fluid rounded shadow-lg project-img" alt="Time Management Application">
+                </div>
+                <div class="col-12 col-md-6 text-left order-2 order-md-1">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">This is a fully functional e-commerce site where users can browse products, add items to the shopping cart, and complete orders. Technologies used include React and Node.js.</p>
+                    <a href="#" class="btn project-btn">In development</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <!-- Tehnologii Web -->
+            <div class="skill-item">
+                <img src="Imagini/html.svg" alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/css.png" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/js.png" alt="JavaScript">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/react-2.svg" alt="React">
+                <h4>React</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/nodejs-icon.svg" alt="Node.js">
+                <h4>Node.js</h4>
+            </div>
+            <!-- Limbaje de Programare -->
+            <div class="skill-item">
+                <img src="Imagini/java-icon.svg" alt="Java">
+                <h4>Java</h4>
+            </div>
+            <!-- Baze de date -->
+            <div class="skill-item">
+                <img src="Imagini/mysql-logo.svg" alt="MySQL">
+                <h4>MySQL</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/mongodb-icon-1.svg" alt="MongoDB">
+                <h4>MongoDB</h4>
+            </div>
+            <!-- Instrumente de Dezvoltare -->
+            <div class="skill-item">
+                <img src="Imagini/github-icon-1.svg" alt="GitHub">
+                <h4>GitHub</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/Visual_Studio_Code_1.35_icon.svg.png" alt="VSC">
+                <h4>VSC</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="indemnuri">
+        <h2>Why Choosing Me?</h2>
+        <div class="cards-container">
+            <div class="cards-wrapper">
+                <!-- Original Cards -->
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+                    <h3>Responsible Web Development</h3>
+                    <p>I create responsive websites that work perfectly on any device.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+                    <h3>Clean and Scalable Code</h3>
+                    <p>I write maintainable code that can be extended in the long term.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff9a8b, #ffc3a0);">
+                    <h3>Attractive Design</h3>
+                    <p>I create websites that not only work but are also visually appealing.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+                    <h3>Performance and Optimization</h3>
+                    <p>I optimize your applications for maximum speed and excellent performance.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #2c3e50, #fd746c);">
+                    <h3>Experience with Modern Technologies</h3>
+                    <p>I work with the latest technologies and frameworks to deliver innovative solutions.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #b92b27, #1565c0);">
+                    <h3>Continuous Feedback and Collaboration</h3>
+                    <p>I constantly collaborate with you to continuously improve your project.</p>
+                </div>
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+                    <h3>Responsible Web Development</h3>
+                    <p>I create responsive websites that work perfectly on any device.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+                    <h3>Clean and Scalable Code</h3>
+                    <p>I write maintainable code that can be extended in the long term.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff9a8b, #ffc3a0);">
+                    <h3>Attractive Design</h3>
+                    <p>I create websites that not only work but are also visually appealing.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+                    <h3>Performance and Optimization</h3>
+                    <p>I optimize your applications for maximum speed and excellent performance.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #2c3e50, #fd746c);">
+                    <h3>Experience with Modern Technologies</h3>
+                    <p>I work with the latest technologies and frameworks to deliver innovative solutions.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #b92b27, #1565c0);">
+                    <h3>Continuous Feedback and Collaboration</h3>
+                    <p>I constantly collaborate with you to continuously improve your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="call-to-action-image">
+        <img src="Imagini/bg-social-footer.svg" alt="Social call-to-action-image" />
+        <div class="overlay-text">
+            Want to collaborate?
+        </div>
+    </div>
+
+    <!-- Call-to-Action Banner -->
+    <section class="call-to-action">
+        <h3>Let's build extraordinary projects together!</h3>
+        <p>Choose a technology and start collaborating now.</p>
+        <a href="#contact" class="btn-primary">Contact me</a>
+    </section>
+
+
+
+    <!-- Recenzii Section --> 
+    <section id="reviews">
+        <div class="container">
+            <h2 class="text-center mb-4">Reviews</h2>
+            <div class="review-container">
+                <!-- Review 1 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #6a11cb, #2575fc); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Eduard R.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">“I worked with Razvan to create a mobile application, and the results exceeded expectations. Even though he is just starting out, it’s clear he is dedicated and passionate about what he does. He paid great attention to detail and guided me through the entire process. Highly recommended!”</p>
+                    </div>
+                </div>
+    
+                <!-- Review 2 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #43cea2, #185a9d); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria V.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">“I was pleasantly surprised by Razvan's professionalism, even though he is at the start of his career. He created a functional and user-friendly website for me. He puts a lot of heart into his projects and is a reliable person. He offers quality work and is dedicated to learning.”</p>
+                    </div>
+                </div>
+    
+                <!-- Review 3 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #ff9966, #ff5e62); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andreea M.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">“I was thrilled to work with Razvan! Even though he is just starting out, he demonstrated great attention to detail and a passion for development. The website he created for me works perfectly, and communication was excellent throughout the project. I wholeheartedly recommend him!”</p>
+                    </div>
+                </div>
+    
+                <!-- Review 4 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #ff9a8b, #ff6a88); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alessia B.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">“Razvan is a young developer full of energy and eager to learn. We collaborated on a simple project, and the results were very good.”</p>
+                    </div>
+                </div>
+    
+                <!-- Review 5 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #00b09b, #96c93d); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrei T.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="card-text">“I’ve worked with Razvan on various projects over time, and I can say he is a true professional, passionate about his work. I highly recommend him!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pagination-controls">
+            <button id="previous-button">Back</button>
+            <div id="pagination-dots" class="pagination-dots"></div>
+            <button id="next-button">Next</button>
+        </div>    
+    </section> 
+    <script src="js/scriptsReview.js"></script>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gradient py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact me</h2>
+            <div class="row">
+                <!-- Mapa interactiva -->
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-center mb-3">Where to find me</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.329236013056!2d26.102527!3d44.435506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8c1b1e2b2b1%3A0x5a0a1e16ef1d0d!2sUniversitatea%20din%20Bucure%C8%99ti!5e0!3m2!1sen!2sus!4v1671766624468!5m2!1sen!2sus"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- Formular de contact -->
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Trimite</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+                <script src="js/scriptServer.js"></script>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <div class="footer-content">
+            <h1>Tudose Razvan</h1>
+            <div class="github-link">
+                <a href="https://github.com/TudoseRazvan" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 All rights reserved</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/sidenav.js"></script>
+
+</body>
+</html>

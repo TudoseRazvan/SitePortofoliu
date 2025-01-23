@@ -1,0 +1,201 @@
+/* Projects Section Detalii Proiecte */
+#project-details-new {
+    background: #000000; 
+    color: white; 
+    padding: 4rem 2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Titlu sectiune Detalii Proiecte */
+.project-section-title {
+    font-size: 2.5rem; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff; 
+    margin-bottom: 2rem;
+    letter-spacing: 3px; 
+    text-transform: none;
+}
+
+/* Stil pentru fiecare proiect */
+.project-item {
+    background-color: rgba(0, 0, 0, 0.4); /* Fundal usor transparent pentru a nu incarca vizual */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Titlu proiect */
+.project-title {
+    color: #ffffff;
+    font-size: 2rem; 
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* La hover pentru titluri */
+.project-title:hover {
+    color: #ffffff; /* sau alta culoare dorita */
+    transform: scale(1.1);
+}
+
+/* Descrierea proiectului */
+.project-description {
+    font-size: 1.1rem;
+    color: #dcdcdc; 
+    margin-bottom: 25px;
+    line-height: 1.8;
+    text-align: justify; 
+}
+
+/* Buton proiect */
+.project-btn {
+    background-color: #00aaff; 
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 170, 255, 0.3);
+    border: none;
+    display: inline-block;
+    min-width: 160px;
+    text-align: center;
+}
+
+/* Hover pentru butoane */
+.project-btn:hover {
+    background-color: #0066cc; 
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.5);
+}
+
+/* Imagini proiecte - dimensiuni fixe */
+.project-img {
+    width: 100%; 
+    max-width: 937px; /* Dimensiunea maxima a imaginii */
+    height: auto; /* Asigura ca inaltimea se ajusteaza automat */
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover pe imagini */
+.project-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsivitate pentru dispozitive mari */
+@media (max-width: 992px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+
+    .project-btn {
+        padding: 10px 25px;
+    }
+
+    .project-img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Responsivitate pentru dispozitive mici */
+@media (max-width: 768px) {
+    /* Proiect: Titlu si descriere mai mari pe ecrane mici */
+.project-section-title {
+    font-size: 2.5rem; /* Creste dimensiunea titlului sectiunii */
+    margin-bottom: 1.5rem;
+}
+
+/* Imagini mai mari pe ecrane mici */
+.project-img {
+    max-height: 400px; /* Creste inaltimea maxima la 400px */
+    width: 100%; /* Asigura ca imaginea ocupa intreaga latime */
+    object-fit: contain; /* Se asigura ca intreaga imagine este vizibila fara taiere */
+    margin-bottom: 25px; /* Spatiu mai mare intre imagine si alte elemente */
+    border-radius: 15px; /* Colturi mai rotunjite pentru un design mai placut */
+}
+
+/* Modificari pentru fiecare proiect */
+.project-item {
+    margin-bottom: 40px; /* Spatiu mai mare intre proiecte */
+    padding: 20px; /* Asigura un layout aerisit */
+}
+
+/* Ajustare text */
+.project-title {
+    font-size: 2.2rem; /* Ajustare pentru a se potrivi mai bine cu imaginile mai mari */
+}
+
+.project-description {
+    font-size: 1.15rem; /* Crestere pentru a echilibra dimensiunea imaginilor */
+}
+
+
+/* Butoane: spatiu mai mare */
+.project-btn {
+    font-size: 1.1rem; /* Creste dimensiunea fontului */
+    padding: 12px 20px; /* Mareste padding-ul */
+}
+
+/* Ajusteaza padding-ul general pentru sectiune */
+#project-details-new {
+    padding: 3rem 1.5rem; /* Mai putin padding pe ecrane mici */
+}
+
+}
+
+/* Ascunde elementele initial */
+.hidden-section {
+    opacity: 0;
+    transform: translateY(20px); /* Elementul incepe usor mai jos */
+    visibility: hidden;
+}
+
+/* Elemente vizibile dupa animatie */
+.visible-section {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Animatia fadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

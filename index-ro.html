@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/project-details.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tudose Razvan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Despre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proiecte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Abilitati</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Recenzii</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="index-en.html" class="flag-link">
+                            <img src="Imagini/GBFlag.svg" alt="UK Flag" class="flag-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+        </div>
+        
+    </nav>
+
+    
+
+    <!-- Meniul de navigare slide -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="brand" onclick="closeNav()">Tudose Razvan</div>
+        <a href="#hero" onclick="navigateToSection(event)">Despre</a>
+        <a href="#projects" onclick="navigateToSection(event)">Proiecte</a>
+        <a href="#skills" onclick="navigateToSection(event)">Abilitati</a>
+        <a href="#reviews" onclick="navigateToSection(event)">Recenzii</a>
+        <a href="#contact" onclick="navigateToSection(event)">Contact</a>
+    </div>
+
+
+    
+     <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- Left Section -->
+            
+            <div class="hero-content">
+                <h1>Salut! Eu sunt <span class="highlight">Razvan</span></h1> 
+                <p>Creez solutii care combina teoria cu practica pentru a adresa provocarile reale ale pietei.</p>
+                <a href="#projects" class="btn-primary-gradient">Vezi Proiectele Mele</a>
+                <a href="#contact" class="btn-outline-light">Contacteaza-ma</a>
+            </div>
+
+            <!-- Mesajul pentru traducere si steagul (Doar pentru ecrane mici) -->
+            <div class="translate-section">
+                <span class="translate-text">Translate to</span>
+                <a href="index-en.html" class="flag-link-hero">
+                    <img src="Imagini/GBFlag.svg" alt="UK Flag" class="flag-icon-hero">
+                </a>
+            </div>
+
+            <!-- Right Section (Hero Visual) -->
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="interactive-card">
+                        <h2>Dezvoltare Web</h2>
+                        <p>Construiesc site-uri si aplicatii care sunt atat functionale, cat si estetice. Inovatia este cheia succesului digital.</p>
+                    </div>
+                    <div class="interactive-card">
+                        <h2>Design UX/UI</h2>
+                        <p>Crez un design intuitiv care pune utilizatorul pe primul loc, pentru a oferi o experienta de neuitat.</p>
+                    </div>
+                    <div class="interactive-card">
+                        <h2>Dezvoltare Software</h2>
+                        <p>Crez solutii software personalizate, care ajuta afaceri sa optimizeze procesele si sa imbunatateasca eficienta operationala.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Transition -->
+        <div class="hero-transition"></div>
+    </section>
+
+    
+    
+    
+
+    
+    
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="text-center section-title">Experienta mea profesionala</h2>
+            <div class="text-center mt-4">
+                <a href="Imagini/CV_Tudose_Razvan.pdf" download="CV_Tudose_Razvan.pdf" class="cv-download-btn">
+                    <span class="btn-icon">↓</span>
+                    <span class="btn-text">Descarca CV-ul complet (PDF)</span>
+                </a>
+            </div>
+            <div class="timeline">
+                <!-- OPTI Software Engineer Intern -->
+                <div class="timeline-item left">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Software Engineer Intern</h3>
+                        <p><strong>Opti Systems SRL</strong></p>
+                        <p><em>Iulie 2024 - Decembrie 2024</em></p>
+                        <p>Dezvoltare si implementare de aplicatii web full-stack, contribuind la crearea interfetelor React si integrarea serviciilor backend, pentru livrarea de solutii software eficiente.</p>
+                    </div>
+                </div>
+    
+                <!-- FMS Software Engineer Intern -->
+                <div class="timeline-item right">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Software Engineer Intern</h3>
+                        <p><strong>FMS IT SRL</strong></p>
+                        <p><em>Iulie 2023 - Decembrie 2023</em></p>
+                        <p>Dezvoltare si testare de aplicatii software pentru optimizarea proceselor interne.</p>
+                    </div>
+                </div>
+    
+                <!-- Intern Ministerul Economiei -->
+                <div class="timeline-item left">
+                    <div class="diamond"></div>
+                    <div class="content">
+                        <h3>Intern</h3>
+                        <p><strong>Ministerul Economiei, Antreprenoriatului si Turismului</strong></p>
+                        <p><em>Martie 2023 - Iunie 2024</em></p>
+                        <p>Am colaborat in departamentul de strategii economice, contribuind la analize si rapoarte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+  
+  
+
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">My projects</h2>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button id="prev-project" class="btn btn-primary mr-2">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button id="next-project" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row project-card-container mt-4">
+                <!-- Project 1: Grile-Drept.com -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/GrileDreptProiect1.png" class="card-img-top" alt="Grile-Drept.com">
+                    </div>
+                </div>
+                <!-- Project 2: Opti Systems Website -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/OptiProiect2.1.png" class="card-img-top" alt="Opti Systems Website">
+                    </div>
+                </div>
+                <!-- Project 3: Weather App -->
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini/WeatherAppProiect3.png" class="card-img-top" alt="Weather App">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 project-card">
+                    <div class="card">
+                        <img src="Imagini\WorkInProgressProject4.jpg" class="card-img-top" alt="Proiect 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-details-new" class="my-5">
+        <h2 class="text-center mb-5 project-section-title">Detalii Proiecte</h2>
+        
+        <div class="project-item-container">
+            <!-- Proiect 1: Grile-Drept.com -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="Imagini/GrileDreptMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Proiect Grile-Drept.com">
+                </div>
+                <div class="col-12 col-md-6 text-left">
+                    <h3 class="project-title">Grile-Drept.com</h3>
+                    <p class="project-description">O platforma online destinata studentilor care se pregatesc pentru examenele de admitere la facultatile de informatica din Romania. Aceasta ofera acces la intrebari din examenele anterioare, informatii detaliate despre procesul de admitere si un clasament public cu scorurile utilizatorilor.</p>
+                    <a href="https://admiteri-drept.vercel.app/" class="btn project-btn" target="_blank" rel="noopener noreferrer">Acceseaza aplicatia</a>
+                </div>
+            </div>
+        
+            <!-- Proiect 2: Opti Systems -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center order-1 order-md-2">
+                    <img src="Imagini/OptiMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Website Opti Systems">
+                </div>
+                <div class="col-12 col-md-6 text-left order-2 order-md-1">
+                    <h3 class="project-title">Website Opti Systems</h3>
+                    <p class="project-description">Am contribuit la dezvoltarea site-ului oficial al Opti Systems SRL, o companie de servicii IT. Proiectul a presupus crearea unei platforme moderne si responsive care sa prezinte serviciile, produsele si solutiile oferite clientilor.</p>
+                    <a href="https://www.opti.ro" class="btn project-btn" target="_blank" rel="noopener noreferrer">Acceseaza aplicatia</a>
+                </div>
+            </div>
+        
+            <!-- Proiect 3: Aplicatie Meteo -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="Imagini/WeatherAppMonitor.png" class="img-fluid rounded shadow-lg project-img" alt="Aplicatie Meteo">
+                </div>
+                <div class="col-12 col-md-6 text-left">
+                    <h3 class="project-title">Aplicatie Meteo</h3>
+                    <p class="project-description">Aceasta aplicatie meteo utilizeaza API-ul OpenWeather pentru a oferi prognoze meteo actualizate. Utilizatorii pot verifica vremea pentru locatia curenta sau pentru orase selectate. Functionalitatile includ afisarea temperaturii curente, prognoze orare si informatii despre rasaritul si apusul soarelui.</p>
+                    <a href="https://weather-app-one-psi-21.vercel.app/" class="btn project-btn" target="_blank" rel="noopener noreferrer">Acceseaza aplicatia</a>
+                </div>                
+            </div>
+            
+            <!-- Proiect 4 -->
+            <div class="project-item row align-items-center mb-5">
+                <div class="col-12 col-md-6 text-center order-1 order-md-2">
+                    <img src="Imagini/WorkInProgressMonitor.jpg" class="img-fluid rounded shadow-lg project-img" alt="Aplicatie de Management al Timpului">
+                </div>
+                <div class="col-12 col-md-6 text-left order-2 order-md-1">
+                    <h3 class="project-title">Platforma de E-commerce (In curs de dezvoltare)</h3>
+                    <p class="project-description">Acesta este un site de comert electronic complet functional, unde utilizatorii pot naviga produsele, adauga articole in cosul de cumparaturi si finaliza comenzi. Tehnologiile folosite includ React si Node.js.</p>
+                    <a href="#" class="btn project-btn">In curs dezvoltare</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Abilitati</h2>
+        <div class="skill-category">
+            <!-- Tehnologii Web -->
+            <div class="skill-item">
+                <img src="Imagini/html.svg" alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/css.png" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/js.png" alt="JavaScript">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/react-2.svg" alt="React">
+                <h4>React</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/nodejs-icon.svg" alt="Node.js">
+                <h4>Node.js</h4>
+            </div>
+            <!-- Limbaje de Programare -->
+            <div class="skill-item">
+                <img src="Imagini/java-icon.svg" alt="Java">
+                <h4>Java</h4>
+            </div>
+            <!-- Baze de date -->
+            <div class="skill-item">
+                <img src="Imagini/mysql-logo.svg" alt="MySQL">
+                <h4>MySQL</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/mongodb-icon-1.svg" alt="MongoDB">
+                <h4>MongoDB</h4>
+            </div>
+            <!-- Instrumente de Dezvoltare -->
+            <div class="skill-item">
+                <img src="Imagini/github-icon-1.svg" alt="GitHub">
+                <h4>GitHub</h4>
+            </div>
+            <div class="skill-item">
+                <img src="Imagini/Visual_Studio_Code_1.35_icon.svg.png" alt="VSC">
+                <h4>VSC</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="indemnuri">
+        <h2>De ce sa ma alegi?</h2>
+        <div class="cards-container">
+            <div class="cards-wrapper">
+                <!-- Carduri originale -->
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+                    <h3>Dezvoltare Web Responsabila</h3>
+                    <p>iti creez site-uri responsive, care functioneaza perfect pe orice dispozitiv.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+                    <h3>Cod Curat si Scalabil</h3>
+                    <p>Scriu cod usor de intretinut si care poate fi extins pe termen lung.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff9a8b, #ffc3a0);">
+                    <h3>Design Atractiv</h3>
+                    <p>Creiez site-uri care nu doar functioneaza, dar sunt si estetic placute.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+                    <h3>Performanta si Optimizare</h3>
+                    <p>iti optimizez aplicatiile pentru viteza maxima si o performanta excelenta.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #2c3e50, #fd746c);">
+                    <h3>Experienta in Tehnologii Moderne</h3>
+                    <p>Lucrez cu cele mai noi tehnologii si framework-uri pentru a livra solutii inovative.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #b92b27, #1565c0);">
+                    <h3>Feedback si Colaborare Continua</h3>
+                    <p>Colaborez constant cu tine pentru a imbunatati continuu proiectul tau.</p>
+                </div>
+
+                <!-- Carduri duplicate pentru miscare continua -->
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+                    <h3>Dezvoltare Web Responsabila</h3>
+                    <p>iti creez site-uri responsive, care functioneaza perfect pe orice dispozitiv.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+                    <h3>Cod Curat si Scalabil</h3>
+                    <p>Scriu cod usor de intretinut si care poate fi extins pe termen lung.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #ff9a8b, #ffc3a0);">
+                    <h3>Design Atractiv</h3>
+                    <p>Creiez site-uri care nu doar functioneaza, dar sunt si estetic placute.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+                    <h3>Performanta si Optimizare</h3>
+                    <p>iti optimizez aplicatiile pentru viteza maxima si o performanta excelenta.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #2c3e50, #fd746c);">
+                    <h3>Experienta in Tehnologii Moderne</h3>
+                    <p>Lucrez cu cele mai noi tehnologii si framework-uri pentru a livra solutii inovative.</p>
+                </div>
+
+                <div class="card indemnuri-card" style="background: linear-gradient(to right, #b92b27, #1565c0);">
+                    <h3>Feedback si Colaborare Continua</h3>
+                    <p>Colaborez constant cu tine pentru a imbunatati continuu proiectul tau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="call-to-action-image">
+        <img src="Imagini/bg-social-footer.svg" alt="Social call-to-action-image" />
+        <div class="overlay-text">
+            Vrei sa colaboram?
+        </div>
+    </div>
+
+    <!-- Call-to-Action Banner -->
+    <section class="call-to-action">
+        <h3>Hai sa construim impreuna proiecte extraordinare!</h3>
+        <p>Alege o tehnologie si incepe sa colaborezi acum.</p>
+        <a href="#contact" class="btn-primary">Contacteaza-ma</a>
+    </section>
+
+
+    <section id="reviews">
+        <div class="container">
+            <h2 class="text-center mb-4">Recenzii</h2>
+            <div class="review-container">
+                <!-- Recenzie 1 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #6a11cb, #2575fc); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Eduard R.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">„Am lucrat cu Razvan pentru a crea o aplicatie mobila, iar rezultatele au fost peste asteptari. Desi este la inceput de drum, se vede ca este dedicat si pasionat de ceea ce face. A fost foarte atent la detalii si m-a ghidat pe tot parcursul procesului. Recomand cu incredere!”</p>
+                    </div>
+                </div>
+
+                <!-- Recenzie 2 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #43cea2, #185a9d); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria V.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">„Am fost placut surprinsa de profesionalismul lui Razvan, chiar daca este inca la inceputul carierei sale. A creat un site pentru mine care este functional si usor de utilizat. isi pune mult suflet in proiectele sale si este o persoana de incredere. Ofera o munca de calitate si este dedicat invatarii."</p>
+                    </div>
+                </div>
+
+                <!-- Recenzie 3 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #ff9966, #ff5e62); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andreea M.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">„Am fost incantata de colaborarea cu Razvan! Desi este la inceput de drum, a demonstrat o mare atentie la detalii si o pasiune pentru dezvoltare. Site-ul pe care l-a creat pentru mine functioneaza perfect, iar comunicarea a fost excelenta pe tot parcursul proiectului. il recomand cu toata increderea!”</p>
+                    </div>
+                </div>
+
+                <!-- Recenzie 4 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #ff9a8b, #ff6a88); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alessia B.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">„Razvan este un tanar developer cu multa energie si dorinta de a invata. Am colaborat cu el pe un proiect simplu, iar rezultatele au fost foarte bune.”</p>
+                    </div>
+                </div>
+
+                <!-- Recenzie 5 -->
+                <div class="card review-card" style="background: linear-gradient(to right, #00b09b, #96c93d); color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrei T.</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="card-text">„Impreuna cu Razvan am lucrat la diverse proiecte de-a lungul timpului si pot spune ca este un adevarat profesionist, pasionat de munca pe care o face. Il recomand tuturor!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="pagination-controls">
+                <button id="previous-button">Inapoi</button>
+                <div id="pagination-dots" class="pagination-dots"></div>
+                <button id="next-button">Inainte</button>
+            </div>    
+        </div>
+    </section>
+    <script src="js/scriptsReview.js"></script>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gradient py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacteaza-ma</h2>
+            <div class="row">
+                <!-- Mapa interactiva -->
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-center mb-3">Gaseste-ma aici</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.329236013056!2d26.102527!3d44.435506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8c1b1e2b2b1%3A0x5a0a1e16ef1d0d!2sUniversitatea%20din%20Bucure%C8%99ti!5e0!3m2!1sen!2sus!4v1671766624468!5m2!1sen!2sus"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                    </div>
+
+                     <!-- Iconuri LinkedIn si Email -->
+                    <div class="contact-icons text-center mt-4">
+                        <a href="https://www.linkedin.com/in/razvan-tudose" target="_blank" class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:razvantudose28@gmail.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formular de contact -->
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Nume</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Numele tau" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email-ul tau" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Mesajul tau" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Trimite</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+                <script src="js/scriptServer.js"></script>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <div class="footer-content">
+            <h1>Tudose Razvan</h1>
+            <div class="github-link">
+                <a href="https://github.com/TudoseRazvan" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Toate drepturile rezervate</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/sidenav.js"></script>
+
+
+
+</body>
+</html>

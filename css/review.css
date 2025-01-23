@@ -1,0 +1,155 @@
+#reviews {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+}
+
+#reviews h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-card:nth-child(1) {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.review-card:nth-child(2) {
+    background: linear-gradient(to right, #ff9a8b, #ffc3a0);
+}
+
+.review-card:nth-child(3) {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.review-card:nth-child(4) {
+    background: linear-gradient(to right, #2c3e50, #fd746c);
+}
+
+.review-card:nth-child(5) {
+    background: linear-gradient(to right, #b92b27, #1565c0);
+}
+
+.stars i {
+    color: gold;
+    margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+.review-card .card-title {
+    color: #007bff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.review-card .card-body {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.review-card .stars {
+    margin-bottom: 1rem;
+    color: #f5c518;
+}
+
+.review-card .stars i {
+    margin: 0 2px;
+}
+
+.review-card .card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.pagination-controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px;
+    outline: none;
+}
+
+.pagination-controls button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.dot {
+    font-size: 24px;
+    color: #aaa;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dot:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.dot.active {
+    color: #000;
+}
+
+@media (max-width: 576px) {
+    .pagination-controls button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .dot {
+        font-size: 20px;
+    }
+
+    .review-card .card-text {
+        font-size: 0.9rem;
+    }
+}

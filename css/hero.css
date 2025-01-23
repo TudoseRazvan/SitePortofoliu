@@ -1,0 +1,214 @@
+/* General Settings */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 100px 0 80px; 
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.8) 40%, #032FA2 60%, #000 100%); /* Gradient complex (negru -> albastru -> negru) */
+}
+
+/* Hero Content  */
+.hero-content {
+    max-width: 55%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+    margin-top: -80px; /* Ridica mai sus textul */
+}
+
+/* Hero Transition - Gradient spre negru spre sectiunea urmatoare */
+.hero-transition {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to right, #000000, #032FA2 70%, #000000); 
+}
+
+/* Hero Visual  */
+.hero-visual {
+    position: relative;
+    max-width: 45%;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+    margin-top: -80px; 
+}
+
+/* Hero Container */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    z-index: 2;
+}
+
+/* Left Section */
+.hero-content {
+    max-width: 55%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.highlight {
+    color: #00D4FF;
+    background: linear-gradient(to right, #00D4FF, #00A6FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn-primary-gradient {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #00D4FF, #00A6FF);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 212, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.hero-content .btn-primary-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 212, 255, 0.6);
+}
+
+/* Right Section (Hero Visual) */
+.hero-visual {
+    position: relative;
+    max-width: 45%;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+}
+
+.visual-container {
+    display: grid;
+    gap: 20px;
+    position: relative;
+}
+
+/* Hover Effects pentru Hero Visual */
+.hero-visual .visual-container:hover .circle {
+    transform: translate(10px, 10px);
+}
+
+.hero-visual h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Carduri interactive cu hover */
+.hero-visual .interactive-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00D4FF;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 212, 255, 0.3);
+}
+
+.hero-visual .interactive-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 212, 255, 0.2));
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.6);
+}
+
+.hero-visual .interactive-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-visual .interactive-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Butoane de actiune */
+.hero-content .btn-outline-light {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid #00D4FF;
+    color: #00D4FF;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-content .btn-outline-light:hover {
+    background: #00D4FF;
+    color: #fff;
+    border-color: #00A6FF;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.6);
+}
+
+.language-switch {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.flag-link {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.flag-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efectul de hover pentru flaguri */
+.flag-link:hover .flag-icon {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Animare Hero Content la hover */
+.hero-container:hover .hero-content h1 {
+    transform: translateX(10px); /* Miscare text pentru un efect mai dinamic */
+}
+
+/* Hero Visual - Efect de zoom */
+.hero-visual:hover {
+    transform: scale(1.05); /* Zoom pentru imagine sau componenta vizuala */
+}
